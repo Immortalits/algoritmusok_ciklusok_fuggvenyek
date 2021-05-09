@@ -1,11 +1,11 @@
 const x = ['', 4, true];
+const f = [];
+
 for (let i = 0; i < x.length; i++) {
   let a = x[i];
-  const f = [];
-  f.push(typeof (a)); if (i < x.length) {
-    console.log(f)
-  }
+  f.push(typeof (a));
 }
+console.log(f)
 
 // const a = x[i];
 // const b = x[1];
