@@ -4,11 +4,14 @@ const x = ['', 4, true];
 const f = [];
 
 // for-on belül létrehozzuk az i változót, ami 0-tól az x hosszáig (elemeinek mennyiségéig) megy egyesével
-for (let i = 0; i < x.length; i++) {
-  // létrehozzuk az a változót, ami az x i-dik eleme
-  let a = x[i];
-  // beletesszük az a változó típusát az f array-e
-  f.push(typeof (a));
+function fuggveny() {
+  for (let i = 0; i < x.length; i++) {
+    // létrehozzuk az a változót, ami az x i-dik eleme
+    let a = x[i];
+    // beletesszük az a változó típusát az f array-e
+    f.push(typeof (a));
+  }
+  // kiírjuk a console-ra az f arrayt
+  console.log(f)
 }
-// kiírjuk a console-ra az f arrayt
-console.log(f)
+fuggveny(x)
